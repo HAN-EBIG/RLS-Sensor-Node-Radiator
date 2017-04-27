@@ -1,2 +1,2 @@
-# RLS-Sensor-Node-Radiator
-Contains code to run on sensor node attached to a radiator.
+# RLS-SensorNodeComponent Radiator Node
+Code to run on sensor node, which is attached to radiators
