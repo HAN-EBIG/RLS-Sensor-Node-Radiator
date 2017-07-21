@@ -2004,12 +2004,14 @@ int NodeManager::registerSensor(int sensor_type, int pin, int child_id) {
           child_id = 10;
         } else if(i == 1){
           child_id = 11;
-        } else if(i== 2){
+        } else if(i == 2){
           child_id = 2;
         }
         else {
           child_id = _getAvailableChildId();
         }
+        Serial.print("ChildID:");
+        Serial.println(child_id);
         index = registerSensor(new SensorDs18b20(child_id,pin,sensors,i));
       }
       return index;
